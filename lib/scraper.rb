@@ -10,6 +10,7 @@ class Scraper
       student = Student.new
       student.name = studentCard.css(".student-name").text
       student.location = studentCard.css(".stduent-location").text
+      student.profile_url = studentCard[href]
     end
 
   end
