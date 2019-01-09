@@ -9,6 +9,7 @@ class Scraper
     doc.css(".student-card").each do |studentCard|
       student = Student.new
       student.name = studentCard.css(".student-name").text
+      student.location = studentCard.css(".stduent-location").text
     end
 
   end
